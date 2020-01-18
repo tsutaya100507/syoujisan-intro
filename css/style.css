@@ -1,6 +1,6 @@
 /*header*/
 html {
-  scroll-padding-top: 95px;
+  /* scroll-padding-top: 95px; */
 }
 body{
     background-color:#EEEEEE;
@@ -607,7 +607,7 @@ footer img:nth-child(3):hover{
 }
 @media screen and (max-width:530px) {
   html {
-    scroll-padding-top: 300px;
+    /* scroll-padding-top: 300px; */
   }
   header{
     position: fixed;
