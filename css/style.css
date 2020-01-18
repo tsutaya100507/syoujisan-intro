@@ -1,0 +1,898 @@
+/*header*/
+html {
+  scroll-padding-top: 95px;
+}
+body{
+    background-color:#EEEEEE;
+}
+.fadein {
+ opacity: 0;
+ transform : translate(0, 50px);
+ transition : all 1500ms;
+}
+.title-wrapper p{
+  opacity: 0;
+  }
+.title-wrapper p span{
+    opacity: 0;
+    }
+.fadein.scrollin{
+ opacity: 1;
+ transform: translate(0, 0);
+}
+
+.fadein3 {
+ opacity: 0;
+ transform : translate(-50px, 0);
+ transition : all 1500ms;
+}
+
+.fadein3.scrollin{
+ opacity: 1;
+ transform: translate(0, 0);
+}
+.header-inner{
+    z-index:1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color:#fff;
+    -webkit-box-shadow: 0 1px 1px rgb(255,255,255,0.25);
+    box-shadow: 0 1px 1px rgb(255,255,255,0.25);
+}
+.header-inner2{
+  background-color: #fff;
+    z-index: 100;
+}
+.header-inner2 p{
+  display: none;
+    color: #660033;
+}
+.header-inner2 button{
+  display: none;
+}
+.header-inner.sticky{
+    position: fixed;
+    top:0;
+}
+
+.header-inner aside{
+  width: 60%;
+}
+.header-inner ul {
+    width:500px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    height: 20px;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-inner p{
+    width: 30%;
+    text-align: center;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    font-weight: 500;
+    font-size: 22px;
+    color: #660033;
+}
+.header-inner ul a{
+    text-decoration: none;
+    font-size: 13px;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    font-weight: 600;
+    color:#444444;
+}
+.header-inner ul li a:hover{
+    transition-duration:.2s;
+    border-bottom: 2px solid #660033;
+    opacity: .6
+}
+/*main*/
+/*profile*/
+main{
+    line-height: 1.6;
+}
+.slideshow{
+    overflow:hidden;;
+    position: relative;
+    height:650px;
+}
+.slideshow img{
+  display: none;
+  position: absolute;
+  left:50%;
+  margin-left: -800px;
+}
+.title-wrapper{
+   position: absolute;
+   top: 200px;
+   left: 0;
+   right: 0;
+   margin: auto;
+   color:#660033;
+}
+.title{
+    margin: 0;
+    font-size: 110px;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+}
+.myname{
+    margin: 0;
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Inria Serif', serif;
+    font-weight:700;
+}
+.mywork{
+  margin: 0;
+  text-align: center;
+  font-size: 28px;
+  font-family: 'Inria Serif', serif;
+  font-weight:700;
+}
+#profile-wrapper{
+    width: 75%;
+    height: 500px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.profile-img{
+    width: 45%;
+    height: 480px;
+    box-shadow:0px 0px 7px;
+    border:8px solid #fff;
+
+}
+.profile-wrapper-text{
+    width: 46%;
+    height: 450px;
+    margin: 0 auto;
+}
+.profile-wrapper-text h1{
+padding: 0;
+color:#555555;
+font-size: 40px;
+font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+height: 40px;
+}
+.profile-wrapper-text p{
+  font-size: 14px;
+  color:#666666;
+}
+
+dl{
+    display: flex;
+    font-size: 14px;
+}
+dt{
+    color: #660033;
+    margin: 0;
+    width: 12%;
+    font-weight: 600;
+}
+dd{
+    color:#666666;
+}
+#experince-wrapper{
+  height: 600px;
+  background-color: #fff;
+  display: block;
+}
+.experince-wrapper-inner{
+  width: 85%;
+  margin: 0px auto;
+  height: 550px;
+  padding-top: 10px;
+}
+.experince-wrapper-inner h1{
+color:#555555;
+font-size: 40px;
+font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+height: 40px;
+margin-left: 4%;
+}
+.fadein3> section{
+  height: 120px;
+  background-color:#EEEEEE;
+  width: 90%;
+  margin: 0 auto 30px auto;
+  padding:1px 10px;
+  box-shadow:7px 7px #660033;
+  border:1px solid #660033;
+
+}
+.fadein3> section h2{
+  font-size: 16px;
+  color:#555555;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+.fadein3> section h2 span{
+  color:#660033;
+}
+.content{
+  font-size: 14px;
+  color:#666666;
+
+}
+.time{
+  font-size: 10px;
+  color:#666666;
+}
+
+/*skill*/
+#skill-wrapper{
+  width: 90%;
+  margin:0 auto;
+}
+#skill-wrapper h1{
+    text-align: center;
+    color:#555555;
+    font-size: 40px;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+.skill-wrapper-program section{
+    display: flex;
+}
+.section-inner{
+    height: 350px;
+}
+.section-inner h2{
+    text-align: center;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    color:#660033;
+}
+.content-box{
+    height: 25px;
+    border: 2px solid #EEEEEE;
+    background-color: rgba(225,225,225,1.1);
+    border-radius: 10px;
+}
+.section-inner-content{
+    width: 80%;
+    margin: 0 auto;
+}
+.section-inner-content p{
+font-size: 14px;
+color:#666666;
+}
+.section-inner-content h3{
+    color:#555555;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    width: 80%;
+    margin: 0;
+}
+.content-box .content-box-html{
+    width: 80%;
+    height: 25px;
+    background-color: #660033;
+     border-radius: 10px;
+    border-bottom-right-radius:0px;
+    border-top-right-radius: 0px;
+}
+.content-box .content-box-css{
+    width: 80%;
+    height: 25px;
+    background-color:#660033;
+    border-radius: 10px;
+    border-bottom-right-radius:0px;
+    border-top-right-radius: 0px;
+}
+.content-box-ruby{
+    width: 60%;
+    height: 25px;
+    background-color: #660033;
+    border-radius: 10px;
+    border-bottom-right-radius:0px;
+    border-top-right-radius: 0px;
+}
+.content-box-rails{
+    width: 50%;
+    height: 25px;
+    background-color:#660033;
+    border-radius: 10px;
+    border-bottom-right-radius:0px;
+    border-top-right-radius: 0px;
+}
+.content-box-sql{
+    width: 30%;
+    height: 25px;
+    background-color: #660033;
+    border-radius: 10px;
+    border-bottom-right-radius:0px;
+    border-top-right-radius: 0px;
+}
+.content-box-js{
+    width: 40%;
+    height: 25px;
+    background-color: #660033;
+    border-radius: 10px;
+    border-bottom-right-radius:0px;
+    border-top-right-radius: 0px;
+}
+.content-box-git{
+    width: 20%;
+    height: 25px;
+    background-color: #660033;
+    border-radius: 10px;
+    border-bottom-right-radius:0px;
+    border-top-right-radius: 0px;
+}
+#work-wrapper{
+  background-color:  #660033;
+  height: 550px;
+}
+#work-wrapper h1{
+  padding-top: 50px;
+  text-align: center;
+  color:#fff;
+  font-size: 40px;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+.work-wrapper-inner{
+  width: 75%;
+  margin: 0 auto;
+  height: 350px;
+  display: flex;
+  justify-content: space-around;
+
+}
+.work-wrapper-inner section{
+  width: 24%;
+  height: 340px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.work-wrapper-inner section img{
+  width: 80%;
+  display: block;
+  margin:20px auto;
+    border:6px solid #660033;
+    border-radius: 10px;
+}
+.work-wrapper-inner section img:hover{
+  opacity: 0.7;
+  transition-duration:.2s;
+}
+.work-section{
+  width: 80%;
+  margin: 0 auto;
+}
+.work-title{
+  color:#555555;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+.work-text{
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  color:#555555;
+  font-size: 14px;
+}
+.work-text2{
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  color:#555555;
+  text-align: center;
+}
+footer{
+    height: 200px;
+  }
+
+#contact-wrapper{
+    width: 80%;
+    margin: 0px auto 0px auto;
+    color:#660033;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+#contact-wrapper h1{
+  margin-bottom: 0;
+  color:#660033;
+  font-size: 40px;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    text-align: center;
+}
+.contact-wrapper-inner{
+    width: 60%;
+    margin: 0 auto;
+    justify-content:space-around;
+}
+.contact-wrapper-inner a:nth-child(1){
+    font-size: 30px;
+    text-decoration: none;
+    color:#660033;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+    font-weight: 500;
+}
+.contact-wrapper-inner a:nth-child(1):hover{
+    transition-duration:.2s;
+    border-bottom: 2px solid #660033;
+    opacity: .6
+}
+.contact-wrapper-inner a:nth-child(3):hover{
+    transition-duration:.2s;
+    opacity: .8
+}
+.or{
+    font-size: 20px;
+    margin: 0 30px;
+}
+.contact-wrapper-inner{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.twitter-image{
+    width: 50px;
+    border-radius:30px;
+}
+#contact-wrapper>p{
+    text-align: center;
+    font-size: 20px;
+}
+.copy{
+  color:#660033;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  text-align:center;
+  font-size:12px;
+  opacity: 0.7;
+  margin-top: 20px;
+}
+
+/*追加*/
+footer img:nth-child(3):hover{
+  opacity: 0.7;
+  transition-duration: 0.7s;
+}
+.img8{
+  position: fixed;
+  bottom:10px;
+  right: 1%;
+    border-width: 0;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    width: 37px;
+    display: block;
+    height: 37px;
+    overflow: hidden;
+}
+/*レスポンシブ対応*/
+
+@media screen and (max-width: 990px) { /*ウィンドウ幅が最大767pxまでの場合に適用(タブレット)*/
+  .header-inner aside{
+    width: 75%;
+  }
+  .header-inner ul {
+      width:500px;
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      margin-top: 28px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .title{
+      font-size: 80px;
+  }
+  .myname{
+      font-size: 32px;
+  }
+  .mywork{
+    font-size: 20px;
+  }
+  .title-wrapper{
+    position: absolute;
+    top:150px;
+  }
+  #profile-wrapper{
+    display: block;
+  }
+  .profile-img{
+   width: 100%;
+}
+.profile-wrapper-text{
+  width: 100%;
+}
+#profile-wrapper{
+  height: 810px;
+}
+.slideshow{
+  height: 450px;
+}
+.work-wrapper-inner{
+  width: 80%;
+}
+.work-wrapper-inner section{
+  width: 30%;
+}
+
+.work-title{
+  font-size: 16px;
+}
+.work-text{
+  font-size: 13px;
+}
+.work-text2{
+  font-size: 13px;
+}
+}
+@media screen and (max-width: 828px) {
+  .title-wrapper{
+    top:100px;
+  }
+.content{
+  font-size: 12px;
+}
+
+.header-inner aside{
+  width: 75%;
+}
+.header-inner ul {
+    margin-right: 7px;
+    width:500px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ }
+@media screen and (max-width:706px) {
+/*  html {
+    scroll-padding-top: 125px;
+  }*/
+    .header-inner{
+      text-align: center;
+    }
+    .header-inner aside{
+      width: 100%;
+      margin: 0 auto;
+    }
+  .title{
+      font-size: 60px;
+  }
+  .myname{
+      font-size: 26px;
+  }
+  .mywork{
+    font-size: 18px;
+  }
+  .slideshow{
+    height: 320px;
+  }
+  .title-wrapper{
+    position: absolute;
+    top:60px;
+  }
+  #profile-wrapper{
+    height: 870px;
+  }
+  .experince-wrapper-inner .fadein section{
+    height: 125px;
+  }
+  #contact-wrapper>p{
+    font-size: 16px;
+  }
+  #work-wrapper{
+    height: 1250px;
+  }
+  .work-wrapper-inner{
+    display: block;
+  }
+  .work-wrapper-inner{
+    width: 80%;
+  }
+  .work-wrapper-inner section{
+    width: 80%;
+    margin: 20px auto;
+    padding-top: 10px;
+  }
+.header-inner p{
+  display: none;
+}
+.header-inner ul{
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+#experince-wrapper{
+    height: 590px;
+}
+@media screen and (max-width:530px) {
+  html {
+    scroll-padding-top: 300px;
+  }
+  header{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1;
+  }
+  .profile-img{
+    height: 350px;
+  }
+  .header-inner{
+    width:100%;
+    text-align: left;
+    z-index: -1;
+  }
+  .header-inner2{
+    height: 50px;
+    margin: 0 auto;
+   justify-content: space-between;
+    display:flex;
+  }
+  .header-inner2 p{
+    margin-left: 20px;
+  }
+  .header-inner2 button{
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: none;
+  }
+  .header-inner aside ul{
+    display: block;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .header-inner aside ul li{
+    margin-top: 18px;
+  }
+  .header-inner2 button img{
+  width: 25px;
+  height: 25px;
+  }
+  .header-inner aside{
+    background-color: rgba(255,255,255,1);
+    width:100%;
+    height: 200px;
+    top: -350px;
+    z-index: -1;
+    position: fixed;
+  }
+  .slideshow{
+    height: 290px;
+  }
+  .header-inner2 p{
+    display: block;
+  }
+  .header-inner ul a{
+    font-size: 11px;
+  }
+  .header-inner ul li a:hover{
+  transition-duration:.2s;
+  border-bottom: 2px solid #660033;
+  opacity:1.0;
+}
+  .title-wrapper{
+    position: absolute;
+    top:90px;
+  }
+  .title{
+      font-size: 50px;
+  }
+  .myname{
+      font-size: 26px;
+  }
+  .mywork{
+    font-size: 16px;
+  }
+
+
+#profile-wrapper{
+  height: 780px;
+}
+#contact-wrapper p:nth-child(3){
+  font-size: 12px;
+}
+.copy{
+  margin-top: 40px;
+  font-size: 9px;
+}
+.contact-wrapper-inner p:nth-child(1) a{
+  font-size: 24px;}
+  #experince-wrapper{
+      height: 590px;
+  }
+}
+
+.or{
+  font-size: 14px;
+}
+.twitter-image{
+  width: 30px;
+}
+.section-inner-content p:nth-child(3){
+  font-size: 13px;
+}
+}
+
+}
+@media screen and (max-width:430px) {
+
+.title{
+    font-size: 36px;
+}
+.myname{
+    font-size: 16px;
+}
+.mywork{
+  font-size: 13px;
+}
+.slideshow{
+  height: 220px;
+}
+}
+@media screen and (max-width:413px) {
+
+.or{
+  font-size: 12px;
+}
+.twitter-image{
+  width: 30px;
+}
+.section-inner-content p:nth-child(3){
+  font-size: 12px;
+}
+.contact-wrapper-inner p:nth-child(1) a{
+  font-size: 20px;
+}
+.title{
+    font-size: 36px;
+}
+.myname{
+    font-size: 16px;
+}
+.mywork{
+  font-size: 13px;
+}
+.title-wrapper{
+  top:90px;
+}
+.slideshow{
+  height: 240px;
+}
+}
+
+@media screen and (max-width:375px) {
+  #experince-wrapper{
+      height: 590px;
+  }
+  #profile-wrapper{
+    height: 690px;
+  }
+  .profile-wrapper-text p:nth-child(2){
+    font-size: 13px;
+  }
+  .profile-img{
+    height: 250px;
+  }
+  dd{
+    margin-top: 3px;
+    font-size: 11px;
+  }
+  .content{
+    font-size: 10.5px;
+  }
+  #contact-wrapper p:nth-child(3){
+    font-size: 10px;
+  }
+  footer{
+    height: 180px;
+  }
+  .copy{
+    text-align: center;
+  }
+    .work-wrapper-inner section{
+      height: 300px;
+    }
+    #work-wrapper{
+      height: 1160px;
+    }
+.img8{
+  width: 30px;
+  height: 30px;
+  opacity: 0.6;
+  bottom:10px;
+  right:2%;
+}
+.img8:hover{
+  opacity: 1.0;
+}
+
+.header-inner2{
+  height: 50px;
+  margin: 0 auto;
+ justify-content: space-between;
+}
+.header-inner2 p{
+  margin-left: 20px;
+}
+.header-inner2 button{
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+}
+
+.header-inner aside ul li{
+  margin-bottom: 20px;
+}
+
+.header-inner2 button img{
+width: 25px;
+height: 25px;
+}
+
+
+.slideshow{
+  height: 230px;
+}
+
+.title-wrapper{
+  position: absolute;
+  top:90px;
+}
+.contact-wrapper-inner p:nth-child(1) a{
+  font-size: 17px;
+}
+.twitter-image{
+width: 22px;
+}
+#contact-wrapper p:nth-child(3){
+font-size: 9px;
+}
+#profile-wrapper{
+height: 710px;
+}
+.title{
+  font-size: 33px;
+}
+.myname{
+  font-size: 14px;
+}
+.mywork{
+font-size: 11px;
+}
+
+/*
+.header-inner{
+  width:975px;
+  height: 160px;
+  top:0;
+  left: -145px;
+  position: fixed;
+  z-index: 1;
+  justify-content: center;
+}
+.header-inner ul{
+  display: block;
+  margin: 0 auto;
+}
+.header-inner ul{
+  display:none;
+}
+.header-inner p{
+  margin-top:15px;
+  margin-left:4%;
+  display:flex;
+}
+*/
+
+
+
+
+}
