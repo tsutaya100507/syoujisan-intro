@@ -9,7 +9,8 @@ $(function() {
      } else {
      var headerHeight =68.8; // PC のヘッダー等の高さ分の数値を入れる
     }
-    $('a[href^=#]').click(function() {
+    $('a[href^=#]').click(function(event) {
+        event.preventDefault();
       var speed = 1000;
       var href= $(this).attr("href");
       var target = $(href == "#" || href == "" ? 'html' : href);
